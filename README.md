@@ -57,6 +57,19 @@ httpuv::runStaticServer("docs")
 3. Source: "Deploy from Branch"
 4. Branch: Wähle Ordner "docs" aus
 
+
+# (E) Trigger deployment
+
+Weg 1: Auf github.com klicke in Menuleiste auf "Actions" 
+
+oder
+
+```R
+install.package(usethis)
+usethis::use_github_action(url="https://github.com/posit-dev/r-shinylive/blob/actions-v1/examples/deploy-app.yaml")
+```
+
+
 # Links
 https://github.com/posit-dev/r-shinylive
 
