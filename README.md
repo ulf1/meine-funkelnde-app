@@ -1,3 +1,11 @@
+# Demo wie r-shinylive um eine ShinyApp drumherumgebastelt wird
+
+Der Ansatz ist, dass die ShinyApp in HTML Code umgewandelt wird, 
+und dann über Github Pages ins Netz gestellt wird.
+
+Es wäre auch möglich den HTML/JS Code woanders zu deployen, 
+z.B. einen klassischen Webserver.
+
 
 # (A) Installation
 
@@ -60,10 +68,15 @@ httpuv::runStaticServer("docs")
 
 # (E) Trigger deployment
 
+Github-Pages wird bei jeden Commit auf der main-Branch automatisch getriggert.
+
+Manuell geht es wie folgt:
+
 Weg 1: Auf github.com klicke in Menuleiste auf "Actions" 
 
 oder
 
+Weg 2:
 ```R
 install.package(usethis)
 usethis::use_github_action(url="https://github.com/posit-dev/r-shinylive/blob/actions-v1/examples/deploy-app.yaml")
