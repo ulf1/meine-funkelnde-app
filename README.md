@@ -46,13 +46,16 @@ In der R CLI:
 shinylive::export("myapp", "docs")
 
 # Teste im Anschluss
-httpuv::runStaticServer("site")
+httpuv::runStaticServer("docs")
 ```
 
 
 # (D) Setup Github Pages
 
-
+1. Menuleiste oben: "Settings"
+2. Seitenmenu: "Pages"
+3. Source: "Deploy from Branch"
+4. Branch: Wähle Ordner "docs" aus
 
 # Links
 https://github.com/posit-dev/r-shinylive
