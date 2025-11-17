@@ -43,7 +43,7 @@ R -e "shiny::runApp('${myfolder}')"
 In der R CLI:
 
 ```R
-shinylive::export("myapp", "site")
+shinylive::export("myapp", "docs")
 
 # Teste im Anschluss
 httpuv::runStaticServer("site")
